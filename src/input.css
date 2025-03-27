@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'hedear';
+    src: url(font/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'light';
+    src: url(font/EduAUVICWANTPre-VariableFont_wght.ttf);
+}
+
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+@keyframes fl {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+@keyframes f {
+    0%{clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    100%{clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+@keyframes fo {
+    0%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) ;
+
+    }
+    100%{clip-path: polygon(92% 0, 100% 0, 100% 100%, 92% 100%);
+        
+
+    }
+  }
+@keyframes h {
+  
+    0%{transform: rotateZ(180deg);
+        
+    }
+  
+    100%{transform: rotateZ(360deg);
+        
+    }
+  }
+  @layer utilities {
+    .text-shadow-custom {
+      text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.4), /* سایه سیاه با شفافیت */
+        0px 4px 6px rgba(0, 0, 0, 0.2), /* سایه سیاه با شفافیت بیشتر */
+        0px 1px 3px rgba(0, 0, 0, 0.1), /* سایه ظریف و نازک */
+        1px 2px 5px rgba(255, 255, 255, 0.6), /* سایه سفید */
+        0px 6px 12px rgba(0, 0, 0, 0.25), /* سایه سیاه با عمق بیشتر */
+        -1px -2px 4px rgba(255, 255, 255, 0.4), /* سایه سفید در جهت مخالف */
+        3px 3px 6px rgba(0, 0, 0, 0.3), /* سایه سیاه با عمق بیشتر */
+        -2px 5px 10px rgba(255, 255, 255, 0.3); /* سایه سفید عمق بیشتر */
+    }
+  }
+  @layer utilities {
+    .text-shadow {
+      text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.4), /* سایه سیاه */
+        0px 4px 6px rgba(0, 0, 0, 0.2), /* سایه سیاه با شفافیت بیشتر */
+        0px 1px 3px rgba(0, 0, 0, 0.1), /* سایه سیاه نازک */
+        1px 2px 5px rgba(255, 215, 0, 0.6), /* سایه طلایی */
+        0px 6px 12px rgba(0, 0, 0, 0.25), /* سایه سیاه عمیق */
+        -1px -2px 4px rgba(255, 215, 0, 0.4), /* سایه طلایی در جهت مخالف */
+        3px 3px 6px rgba(0, 0, 0, 0.3), /* سایه سیاه با عمق بیشتر */
+        -2px 5px 10px rgba(255, 215, 0, 0.3); /* سایه طلایی عمق بیشتر */
+    }
+  }
+  
+  
